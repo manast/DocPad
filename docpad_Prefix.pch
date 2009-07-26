@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'docpad' target in the 'docpad' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
