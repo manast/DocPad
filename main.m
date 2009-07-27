@@ -3,7 +3,7 @@
 //  docpad
 //
 //  Created by Manuel Astudillo on 7/26/09.
-//  Copyright __MyCompanyName__ 2009. All rights reserved.
+//  Copyright CodeTonic 2009. All rights reserved.
 //
 
 #import <Python/Python.h>
