@@ -8,15 +8,19 @@
 
 from Foundation import *
 from AppKit import *
+from Cocoa import *
 import objc
 
 class docpadAppDelegate(NSObject):
 	textView = objc.IBOutlet()
+	docutilController = objc.IBOutlet()
 	
 	def applicationDidFinishLaunching_(self, sender):
 		font = NSFont.fontWithName_size_("Courier", 12)
 		self.textView.setFont_(font)
 		self.textView.setString_("")
+		self.textView.setDelegate_(self.docutilController)
+		
 		NSLog("Application did finish launching.")
 		
 	def applicationWillTerminate_(self,sender):
