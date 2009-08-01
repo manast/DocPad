@@ -10,12 +10,11 @@
 import objc
 import Foundation
 import AppKit
-import DocUtilController
 
 from PyObjCTools import AppHelper
 
 # import modules containing classes required to start application and load MainMenu.nib
-import docpadAppDelegate
+import docpadDocument
 
 # pass control to AppKit
 AppHelper.runEventLoop()
