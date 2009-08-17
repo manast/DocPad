@@ -116,7 +116,7 @@ class docpadDocument(NSDocument):
 		NSLog("Data Of Type %s" % typeName )
 		
 		tmp = NSString.stringWithString_(self.textView.string())
-		data = tmp.dataUsingEncoding_(NSASCIIStringEncoding)
+		data = tmp.dataUsingEncoding_(NSUTF8StringEncoding)
 		
 		return (data, None)
    	
