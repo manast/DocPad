@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64A1414F103B56C2002236EC /* MarkerLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A1414A103B56C2002236EC /* MarkerLineNumberView.m */; };
+		64A14150103B56C2002236EC /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A1414C103B56C2002236EC /* NoodleLineNumberMarker.m */; };
+		64A14151103B56C2002236EC /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A1414E103B56C2002236EC /* NoodleLineNumberView.m */; };
 		64D8E3A510247E64001CA8EF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D8E3A410247E64001CA8EF /* WebKit.framework */; };
 		77383F230C07AB8F0043B131 /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = 77383F220C07AB8F0043B131 /* main.py */; };
 		77383F2C0C07ABD10043B131 /* docpadDocument.py in Resources */ = {isa = PBXBuildFile; fileRef = 77383F2B0C07ABD10043B131 /* docpadDocument.py */; };
@@ -28,6 +31,12 @@
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* docpad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = docpad_Prefix.pch; sourceTree = "<group>"; };
+		64A14149103B56C2002236EC /* MarkerLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerLineNumberView.h; sourceTree = "<group>"; };
+		64A1414A103B56C2002236EC /* MarkerLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerLineNumberView.m; sourceTree = "<group>"; };
+		64A1414B103B56C2002236EC /* NoodleLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberMarker.h; sourceTree = "<group>"; };
+		64A1414C103B56C2002236EC /* NoodleLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberMarker.m; sourceTree = "<group>"; };
+		64A1414D103B56C2002236EC /* NoodleLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberView.h; sourceTree = "<group>"; };
+		64A1414E103B56C2002236EC /* NoodleLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberView.m; sourceTree = "<group>"; };
 		64D8E3A410247E64001CA8EF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 		77383F220C07AB8F0043B131 /* main.py */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
 		77383F2B0C07ABD10043B131 /* docpadDocument.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = docpadDocument.py; sourceTree = "<group>"; };
@@ -95,6 +104,7 @@
 		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				64A14148103B5687002236EC /* third-party */,
 				77383F2B0C07ABD10043B131 /* docpadDocument.py */,
 			);
 			name = Classes;
@@ -129,6 +139,19 @@
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64A14148103B5687002236EC /* third-party */ = {
+			isa = PBXGroup;
+			children = (
+				64A14149103B56C2002236EC /* MarkerLineNumberView.h */,
+				64A1414A103B56C2002236EC /* MarkerLineNumberView.m */,
+				64A1414B103B56C2002236EC /* NoodleLineNumberMarker.h */,
+				64A1414C103B56C2002236EC /* NoodleLineNumberMarker.m */,
+				64A1414D103B56C2002236EC /* NoodleLineNumberView.h */,
+				64A1414E103B56C2002236EC /* NoodleLineNumberView.m */,
+			);
+			name = "third-party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +214,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				64A1414F103B56C2002236EC /* MarkerLineNumberView.m in Sources */,
+				64A14150103B56C2002236EC /* NoodleLineNumberMarker.m in Sources */,
+				64A14151103B56C2002236EC /* NoodleLineNumberView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

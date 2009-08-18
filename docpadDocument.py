@@ -81,6 +81,7 @@ def restify( text, initial_header_level=1, language_code='en', settings_override
 
 class docpadDocument(NSDocument):
 	textView = objc.IBOutlet()
+	scrollView = objc.IBOutlet()
 	webView = objc.IBOutlet()
 	
 	def init(self):
@@ -109,6 +110,14 @@ class docpadDocument(NSDocument):
 		super(docpadDocument, self).windowControllerDidLoadNib_(aController)
 		
 		NSLog("Nib Loaded")
+		
+		lineNumberView = MarkerLineNumberView.alloc().initWithScrollView_(self.scrollView)
+
+		self.scrollView.setVerticalRulerView_(lineNumberView)
+		self.scrollView.setHasHorizontalRuler_(False)
+		self.scrollView.setHasVerticalRuler_(True)
+		self.scrollView.setRulersVisible_(True)
+
 		self.initTextView( self.textContents )
 		self.rest2html()
 
